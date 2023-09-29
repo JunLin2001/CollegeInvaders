@@ -1,0 +1,59 @@
+2022-02-24
+
+The specs group was able to find two complete sets of IEEE software requirement specification guidelines, IEEE Std 1233-1996 and IEEE Std 830-1998.
+
+2022-03-08
+
+It was decided that Jacob Flickinger would temporarily assume both secretary and ambassador jobs in the interim.
+
+2022-03-23
+
+Yankang Xue reported that 640x480 is the recommended size for a small web game. However, 224x256 and 240x320 are also being considered.
+
+2022-03-24
+
+It was agreed that 640x480 would be the resolution of the game to be communicated with backend and graphics.
+
+2022-03-28
+
+Joshua Fox did basic work on the document to clear up some previously undecided details. Others can and should contribute if they feel there is anything to add. http://gamedocs.org/documents/ was used as a reference.
+
+2022-03-29
+
+The group decided on the next few tasks to be completed:
+Revise graphical section of document
+Turn scoring into its own section
+Contact backbone for defenses mechanic now that framework is done
+Detail technical or programming related aspects of project engineering game loop
+Contact ambassadors
+Add index, glossary
+Discuss additional mechanics
+Collect all previous notes to put in one place
+Add version history to document so we know which changes we made without referencing SVN or Google Docs every time
+Set clear goals for April
+
+2022-03-31
+
+It was communicated that graphics would do the animations
+In conversation with graphics:
+Student player will shoot pencils or crumpled up papers
+Professor level 1 enemy will shoot homework assignments (papers) just dodge
+Professor level 2 shoots exams, maybe with an F
+Professor level 3 enemy shoots textbooks
+
+Later in the day, we determined that the following aspects would be the same as the original game:
+The player starts with 3 lives.
+In display terms, the game starts with 2 lives displayed on the bottom left. The player moving around counts as the 3rd life.
+If the player is hit once, they lose 1 life. Then the player has 2 lives. Then 1 life is displayed on the bottom left.
+If the player has been hit twice, and they have lost 2 lives, then no lives are displayed on the bottom left, but the player still has 1 life and the game continues.
+If the player has lost 3 lives, game over. In terms of display, if the player is hit when they have 0 lives displayed on the bottom left, game over.
+If the invaders reach the bottom of the screen, game over.
+
+2022-04-05
+
+We determined that in an abstract sense, the screen is effectively divided into 15 columns. The middle 13 columns may be occupied by invaders but the column on the far left and the column on the far right are padding only. The invaders move side to side only within the middle 13 column area.
+
+We informed graphics that each invader would therefore be about 43 pixels wide, and they let us know that their initial designs may be wider and it is partly up to backbone to decide how to resize them.
+
+One way to do this is to have each invader occupy a box that is 40 pixels wide, so the total field is 520 pixels, with 60 pixels of padding on either side.
+
